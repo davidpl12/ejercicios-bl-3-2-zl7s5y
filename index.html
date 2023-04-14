@@ -10,7 +10,142 @@
   <body>
     <main>
       <h1>Ejercicios JS3</h1>
+
+      <form action="/" method="post" id="formulario">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+          </p>
+          <p>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" />
+          </p>
+          <p>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" />
+          </p>
+          <p>
+            <label for="sexo">Sexo</label>
+            <input type="text" name="sexo" id="sexo" />
+          </p>
+          <p>
+            <label for="fechaNac">Fecha de nacimiento</label>
+            <input type="date" name="fechaNac" id="fechaNac" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Dirección</legend>
+          <p>
+            <label for="via">Tipo de vía</label>
+            <input list="vias" name="via" id="via" />
+            <datalist id="vias">
+              <option value="Calle"></option>
+              <option value="Avenida"></option>
+              <option value="Plaza"></option>
+              <option value="Carretera"></option>
+            </datalist>
+          </p>
+          <p>
+            <label for="nombreVia">Nombre</label>
+            <input type="text" name="nombreVia" id="nombreVia" />
+          </p>
+          <p>
+            <label for="portal">Portal</label>
+            <input type="text" name="portal" id="portal" />
+          </p>
+          <p>
+            <label for="planta">Planta</label>
+            <input type="text" name="planta" id="planta" />
+          </p>
+          <p>
+            <label for="puerta">Puerta</label>
+            <input type="text" name="puerta" id="puerta" />
+          </p>
+          <p>
+            <label for="codigoPostal">Codigo Postal</label>
+            <input type="text" name="codigoPostal" id="codigoPostal" />
+          </p>
+          <p>
+            <label for="localidad">Localidad</label>
+            <input type="text" name="localidad" id="localidad" />
+          </p>
+          <p>
+            <label for="provincia">Provincia</label>
+            <input type="text" name="provincia" id="provincia" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contacto</legend>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </p>
+          <p>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" />
+          </p>
+          <p>
+            <label for="fotografia">Añadir fotografía</label>
+            <input
+              type="file"
+              name="fotografia"
+              id="fotografia"
+              accept=".jpg, .png"
+              maxsize="1MB"
+            />
+          </p>
+          <p>
+            <label>Aficiones:</label><br />
+            <label>
+              <input type="checkbox" value="Aficion 1" /> Aficion 1
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 2" /> Aficion 2
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 3" /> Aficion 3
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 4" /> Aficion 4
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 5" /> Aficion 5
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 6" /> Aficion 6
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 7" /> Aficion 7
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 8" /> Aficion 8
+            </label>
+            <label>
+              <input type="checkbox" value="Aficion 9" /> Aficion 9
+            </label>
+            <label
+              ><input type="checkbox" value="Aficion 10" /> Aficion 10</label
+            >
+          </p>
+          <p>
+            <label for="observacion">Observaciones</label>
+            <textarea
+              name="observacion"
+              id="observacion"
+              cols="30"
+              rows="10"
+              maxlength="500"
+            ></textarea>
+          </p>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Eliminar</button>
+
+        - Botón de cancelar, enviar y limpiar
+      </form>
     </main>
   </body>
 </html>
-
